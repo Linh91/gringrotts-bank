@@ -5,12 +5,12 @@
   };
 
   Transaction.prototype.credit = function(moneyIn) {
-    this.bank.balance += moneyIn;
+    this.bank.increaseBalance(moneyIn);
     creditTrans = [CurrentDate(), moneyIn, 0, this.bank.balance]
   };
 
   Transaction.prototype.debit = function(moneyOut) {
-    this.bank.balance -= moneyOut;
+    this.bank.decreaseBalance(moneyOut);
     debitTrans = [CurrentDate(), 0, moneyOut, this.bank.balance]
   };
   exports.Transaction = Transaction;
