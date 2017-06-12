@@ -14,4 +14,4 @@ As a wizard\n
 So I can check how much I have in my bank incase Voldermolt rises\n
 I would like to check the activities of my account\n
 
-(/documents/Gringotts.png)
+(file:///Users/sammy_x/Documents/Gringotts.png)
