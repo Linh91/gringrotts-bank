@@ -17,8 +17,7 @@ describe('BankStatement', function() {
     it('returns record of recent transations', function() {
       trans.bank = bank;
       trans.credit(600);
-      console.log(statement.viewStatement());
-      expect(statement.viewStatement()).toEqual("date,credit,debit,balance\n 12/06/2017,600,0,600")
+      expect(statement.viewStatement()).toEqual("date,credit,debit,balance \n12/06/2017,600,0,600")
     });
   });
 });

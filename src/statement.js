@@ -4,9 +4,8 @@
   };
 
   BankStatement.prototype.viewStatement = function () {
-    // return this.record.join(" \n");
     this.record.push(creditTrans);
-    console.log(this.record)
+    return this.record.join(" \n");
   };
   exports.BankStatement = BankStatement;
 })(this);
