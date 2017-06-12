@@ -28,12 +28,17 @@ describe('Bank', function() {
       bank.credit(1000);
       bank.withdraw(90);
       expect(bank.balance).toEqual(910);
-    })
-  })
+    });
+  });
 
   describe('statement', function() {
     it('returns a default statement', function() {
       expect(bank.statement).toEqual(["date", "credit", "debit", "balance"]);
+    });
+
+    it('returns the credit transaction in an array', function() {
+      bank.credit(90);
+      expect(bank.statement[4]).toEqual(["12/06/2017", 90, 0, 90]);
     })
-  })
+  });
 });
