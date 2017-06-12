@@ -12,7 +12,7 @@ describe('Bank', function() {
 
   describe('date', function() {
     it('returns the current date', function() {
-      expect(bank.date).toEqual(today);
+      expect(bank.date).toEqual(CurrentDate());
     });
   });
 
@@ -38,13 +38,13 @@ describe('Bank', function() {
 
     it('returns the credit transaction in an array', function() {
       bank.credit(90);
-      expect(bank.transaction[1]).toEqual([today, 90, 0, 90]);
+      expect(bank.transaction[1]).toEqual([CurrentDate(), 90, 0, 90]);
     });
 
     it('returns a withdrawal transaction in an array', function() {
       bank.credit(80);
       bank.withdraw(40);
-      expect(bank.transaction[2]).toEqual([today, 0, 40, 40]);
+      expect(bank.transaction[2]).toEqual([CurrentDate(), 0, 40, 40]);
     });
   });
 
