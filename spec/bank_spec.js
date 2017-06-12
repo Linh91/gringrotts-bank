@@ -30,4 +30,10 @@ describe('Bank', function() {
       expect(bank.balance).toEqual(910);
     })
   })
+
+  describe('statement', function() {
+    it('returns a default statement', function() {
+      expect(bank.statement).toEqual(["date", "credit", "debit", "balance"]);
+    })
+  })
 });
