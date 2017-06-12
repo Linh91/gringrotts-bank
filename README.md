@@ -14,4 +14,4 @@ As a wizard\n
 So I can check how much I have in my bank incase Voldermolt rises\n
 I would like to check the activities of my account\n
 
-![How to run Gringotts bank] (/Users/sammy_x/projects/gringrotts-bank/Gringotts.png)
+![How to run Gringotts bank] (images/Gringotts.png)
