@@ -17,8 +17,8 @@ describe('Transaction', function() {
   describe('Debit', function() {
     it('returns a deducted balance', function() {
       trans.credit(600);
-      trans.debit(50);
-      expect(bank.balance).toEqual(550);
+      trans.debit(60);
+      expect(bank.balance).toEqual(540);
     })
   })
 });

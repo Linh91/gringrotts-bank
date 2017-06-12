@@ -11,8 +11,8 @@
 
   Transaction.prototype.debit = function(moneyOut) {
     this.bank.balance -= moneyOut;
-    // var withdraw_trans = [this.date, 0, money_out, this.balance]
-    // this.transaction.push(withdraw_trans);
+    statement = new BankStatement();
+    debitTrans = [CurrentDate(), 0, moneyOut, this.bank.balance]
   };
   exports.Transaction = Transaction;
 })(this);
