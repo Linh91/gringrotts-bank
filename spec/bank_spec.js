@@ -9,4 +9,10 @@ describe('Bank', function() {
       expect(bank._balance).toEqual(0);
     });
   });
+
+  describe('date', function() {
+    it('returns the current date', function() {
+      expect(bank._date).toEqual(today)
+    });
+  });
 });
