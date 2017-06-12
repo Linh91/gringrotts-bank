@@ -31,14 +31,29 @@ describe('Bank', function() {
     });
   });
 
-  describe('statement', function() {
-    it('returns a default statement', function() {
-      expect(bank.statement).toEqual(["date", "credit", "debit", "balance"]);
+  describe('transaction', function() {
+    it('returns a default transaction', function() {
+      expect(bank.transaction).toEqual([["date", "credit", "debit", "balance"]]);
     });
 
     it('returns the credit transaction in an array', function() {
       bank.credit(90);
-      expect(bank.statement[4]).toEqual(["12/06/2017", 90, 0, 90]);
-    })
+      expect(bank.transaction[1]).toEqual([today, 90, 0, 90]);
+    });
+
+    it('returns a withdrawal transaction in an array', function() {
+      bank.credit(80);
+      bank.withdraw(40);
+      expect(bank.transaction[2]).toEqual([today, 0, 40, 40]);
+    });
+  });
+
+  describe('view statement', function() {
+    it('shows all the transactions that have been made', function() {
+      bank.credit(77);
+      bank.withdraw(70);
+      console.log(bank.view_statement());
+      expect(bank.view_statement()).toEqual('date,credit,debit,balance \n12/06/2017,77,0,77 \n12/06/2017,0,70,7');
+    });
   });
 });
