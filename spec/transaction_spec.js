@@ -19,6 +19,12 @@ describe('Transaction', function() {
       trans.credit(600);
       trans.debit(60);
       expect(bank.balance).toEqual(540);
-    })
-  })
+    });
+  });
+
+  describe('CreditArr', function() {
+    it('has an empty array by default', function() {
+      expect(trans.creditArr).toEqual([]);
+    });
+  });
 });

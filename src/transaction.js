@@ -1,7 +1,7 @@
 (function(exports) {
   function Transaction(bank) {
     this.bank = bank;
-    statement = new BankStatement();
+    var statement = new BankStatement();
     this.creditArr = [];
     this.debitArr = [];
   };
