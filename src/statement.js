@@ -1,12 +1,16 @@
 (function(exports) {
-  function BankStatement() {
-    this.record = [["date", "credit", "debit", "balance"]]
+  function BankStatement(creditArray, debitArray) {
+    this.record = [["date", "credit", "debit", "balance"]];
+    this.creditArray = creditArray;
+    this.debitArray = debitArray;
+    print = new Print();
   };
 
-  BankStatement.prototype.viewStatement = function () {
-    this.record.push(creditTrans);
-    this.record.push(debitTrans);
-    return this.record.join(" \n");
+  BankStatement.prototype.transList = function() {
+    this.record.push(this.creditArray);
+    this.record.push(this.debitArray);
+    return this.record
   };
+
   exports.BankStatement = BankStatement;
 })(this);
