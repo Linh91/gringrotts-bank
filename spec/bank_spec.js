@@ -5,10 +5,23 @@ describe('Bank', function() {
   });
 
   describe('balance', function() {
-    it('returns the balance of 0', function() {
+    it('has a default balance of 0', function() {
       expect(bank.balance).toEqual(0);
     });
+
+    it('can be increased', function() {
+      bank.increaseBalance(90);
+      expect(bank.balance).toEqual(90);
+    });
+
+    it('can be decreased', function() {
+      bank.increaseBalance(150);
+      bank.decreaseBalance(15);
+      expect(bank.balance).toEqual(135);
+    });
   });
+
+
 
   // describe('date', function() {
   //   it('returns the current date', function() {
