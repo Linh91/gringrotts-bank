@@ -19,6 +19,14 @@ describe('Bank', function() {
       bank.decreaseBalance(15);
       expect(bank.balance).toEqual(135);
     });
+
+    it('has the correct balance amount', function() {
+      bank.increaseBalance(15);
+      bank.decreaseBalance(9);
+      bank.increaseBalance(48);
+      bank.decreaseBalance(12);
+      expect(bank.balance).toEqual(42);
+    });
   });
 
 
