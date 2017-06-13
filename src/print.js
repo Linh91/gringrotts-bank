@@ -8,8 +8,8 @@
   };
 
   Print.prototype.print = function() {
-    header();
-    body(this.array);
+    console.log(header());
+    console.log(body(this.array));
   };
 
   function header() {
