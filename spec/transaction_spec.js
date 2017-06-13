@@ -21,16 +21,4 @@ describe('Transaction', function() {
       expect(bank.balance).toEqual(540);
     });
   });
-
-  describe('CreditArr', function() {
-    it('has an empty array by default', function() {
-      expect(trans.creditArr).toEqual([]);
-    });
-  });
-
-  describe('DebitArr', function() {
-    it('has an empty array by default', function() {
-      expect(trans.debitArr).toEqual([]);
-    });
-  });
 });

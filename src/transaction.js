@@ -1,33 +1,22 @@
 (function(exports) {
   function Transaction(bank) {
     this.bank = bank;
-    var statement = new BankStatement();
-    this.creditArr = [];
-    this.debitArr = [];
+    this.print = new Print();
   };
 
   Transaction.prototype.credit = function(moneyIn) {
     this.bank.increaseBalance(moneyIn);
-    var creditTrans = [CurrentDate(), moneyIn, 0, this.bank.balance]
-    this.creditArr.push(creditTrans);
+    this.transRecord('credit', moneyIn);
   };
 
   Transaction.prototype.debit = function(moneyOut) {
     this.bank.decreaseBalance(moneyOut);
-    var debitTrans = [CurrentDate(), 0, moneyOut, this.bank.balance]
-    this.debitArr.push(debitTrans);
+    this.transRecord('debit', moneyOut);
   };
 
+  Transaction.prototype.transRecord = function(type, amount) {
+    var record = new Record(CurrentDate(), type, amount, this.bank.balance);
+    this.print.addData(record);
+  };
   exports.Transaction = Transaction;
 })(this);
-
-// var tsb = new Bank();
-// var trans = new Transaction();
-// trans.bank = tsb
-// trans.credit(500);
-// tsb.balance
-// trans.debit(50);
-// tsb.balance
-// statement.creditArray = trans.creditArr
-// statement.creditList();
-// print.printList = statement.creditList();
