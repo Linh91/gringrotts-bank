@@ -12,8 +12,9 @@ describe('Print', function() {
     it('is an empty array', function() {
       trans.bank = tsb;
       trans.credit(545)
-      console.log(trans.print.print());
-      expect(trans.print.print()).toEqual(date||credit/debit||amount||balance);
+      console.log = jasmine.createSpy("log");
+      var statement = trans.print.print();
+      expect(console.log).toHaveBeenCalledWith(statement);
     });
   });
 });
