@@ -1,4 +1,6 @@
-#Gringrotts Bank
+# Gringrotts Bank
+
+![Gringotts bank](https://user-images.githubusercontent.com/17644847/27127636-ba04e8da-50f3-11e7-8b03-5d3672d85de0.jpg)
 
 The only bank of the wizarding world.
 
@@ -14,4 +16,5 @@ As a wizard\n
 So I can check how much I have in my bank incase Voldermolt rises\n
 I would like to check the activities of my account\n
 
-![How to run Gringotts bank] (images/Gringotts.png)
+
+![How to run Gringotts bank](https://user-images.githubusercontent.com/17644847/27127636-ba04e8da-50f3-11e7-8b03-5d3672d85de0.jpg)
