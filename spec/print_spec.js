@@ -8,8 +8,8 @@ describe('Print', function() {
     print = new Print();
   })
 
-  describe('Array', function() {
-    it('is an empty array', function() {
+  describe('Print', function() {
+    it('gives you the bank statement', function() {
       trans.bank = tsb;
       trans.credit(545)
       console.log = jasmine.createSpy("log");
