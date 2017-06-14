@@ -4,17 +4,17 @@
 
 The only bank of the wizarding world.
 
-As a wizard\n
-So I can put money into my account to buy an owl\n
-I would like to credit an amount into my account\n
+As a wizard<br>
+So I can put money into my account to buy an owl<br>
+I would like to credit an amount into my account<br>
 
-As a wizard\n
-So I can buy myself a butterbeer\n
-I would like to withdraw an amount from my account\n
+As a wizard<br>
+So I can buy myself a butterbeer<br>
+I would like to withdraw an amount from my account<br>
 
-As a wizard\n
-So I can check how much I have in my bank incase Voldermolt rises\n
-I would like to check the activities of my account\n
+As a wizard<br>
+So I can check how much I have in my bank incase Voldermolt rises<br>
+I would like to check the activities of my account<br>
 
 
 ![How to run Gringotts bank](https://user-images.githubusercontent.com/17644847/27127636-ba04e8da-50f3-11e7-8b03-5d3672d85de0.jpg)
