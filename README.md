@@ -4,7 +4,7 @@
 
 The only bank of the wizarding world. ──☆
 
-## User story
+## User stories
 
 As a wizard<br>
 So I can put money into my account to buy an owl<br>
