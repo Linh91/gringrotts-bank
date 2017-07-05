@@ -28,6 +28,6 @@ As a good wizard, please ensure you have npm installed before running<br>
 As a taught in Hogwarts, one must TDD. <br>
 
 <code>open SpecRunner.html </code>
-![screen shot 2017-07-05 at 20 45 48](https://user-images.githubusercontent.com/17644847/27882132-52d91876-61c3-11e7-9004-f54e98671924.png)
 
+![screen shot 2017-07-05 at 20 45 48](https://user-images.githubusercontent.com/17644847/27882132-52d91876-61c3-11e7-9004-f54e98671924.png)
 Now don't go using all that money on those Butterbeers! 🍺
